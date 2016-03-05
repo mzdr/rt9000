@@ -1,0 +1,16 @@
+.device-group {
+    border: 0;
+    margin: 0;
+    min-width: 0;
+    padding: 0;
+
+    > .legend {
+        margin-bottom: 0.125rem;
+    }
+
+    > .smart-input {
+        float: left;
+        margin-bottom: 1rem;
+        width: calc(100% / 3 - #{1rem * 2 / 3});
+    }
+}

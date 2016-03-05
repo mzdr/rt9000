@@ -36,16 +36,7 @@ export default class Device {
         this.width = parseInt(options.width || 400, 10);
         this.height = parseInt(options.height || 400, 10);
         this.url = options.url || '';
-
-        // screen should be resizable
-        if (options.resizable) {
-            this.screen.classList.add('-resizable');
-            this.screen.dataset.resizable = true;
-        }
-
-        if (options.label) {
-            this.label = options.label;
-        }
+        this.label = options.label;
     }
 
     onCloseButtonClicked(e) {
@@ -132,6 +123,8 @@ export default class Device {
      * @return {[type]}     [description]
      */
     set label(label) {
-        this.screen.dataset.label = label;
+        if (label) {
+            this.screen.dataset.label = label;
+        }
     }
 }

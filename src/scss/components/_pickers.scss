@@ -1,7 +1,11 @@
 .device-picker {
     display: inline-block;
-    margin: 0.5rem;
+    margin-bottom: 1rem;
     position: relative;
+
+    &:not(:last-child) {
+        margin-right: 0.5rem;
+    }
 
     > .checkbox {
         position: absolute;

@@ -7,5 +7,43 @@
     box-shadow: inset 0 0 0 99em _color(white);
     color: currentColor;
     outline: 0;
-    width: 100%;
+    padding: 0;
+}
+
+.smart-input {
+    display: inline-block;
+    padding: 1.625rem 1rem 0.75rem;
+    position: relative;
+
+    & + & {
+        margin-left: 1rem;
+    }
+
+    > .label {
+        @extend %shaky-border;
+
+        color: rgba(_color(text-primary), 0.25);
+        cursor: text;
+        font-size: 0.625em;
+        font-weight: bold;
+        height: 100%;
+        left: 0;
+        padding-left: 0.3125rem;
+        padding-top: 0.25rem;
+        position: absolute;
+        top: 0;
+        width: 100%;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    > .input {
+        width: 100%;
+    }
+
+    > .input:valid + .label::before {
+        display: block;
+    }
 }

@@ -2,10 +2,6 @@
     margin: 2rem;
     position: relative;
 
-    &.-resizable > .iframe {
-        resize: both;
-    }
-
     &::after {
         display: block;
         font-family: monospace;

@@ -14,14 +14,6 @@
    min-width: 50rem;
 }
 
-::-webkit-input-placeholder {
-   color: rgba(0, 0, 0, 0.25);
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   color: rgba(0, 0, 0, 0.25);
-}
-
-:-ms-input-placeholder {
-   color: rgba(0, 0, 0, 0.25);
+::placeholder {
+   color: rgba(_color(text-primary), 0.25);
 }

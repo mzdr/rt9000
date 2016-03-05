@@ -39,12 +39,25 @@ class ResolutionTester9000 {
      */
     onFactorySubmit(e) {
         let elements = e.currentTarget.elements;
+        let custom = {
+            url: this.url.value
+        };
 
         // don't do normal form action
         e.preventDefault();
 
+        // check if any predefined device has been checked
         for (var i = 0; i < elements.length; i++) {
             let element = elements[i];
+
+            // save custom fields
+            if (element.name === 'width') {
+                custom.width = element.value;
+            } else if (element.name === 'height') {
+                custom.height = element.value;
+            } else if (element.name === 'label') {
+                custom.label = element.value;
+            }
 
             // element not checked
             if (element.checked !== true) {
@@ -62,6 +75,11 @@ class ResolutionTester9000 {
 
             // reset checked state
             element.checked = undefined;
+        }
+
+        // check if custom device has been defined
+        if (custom.width && custom.height) {
+            this.createDevice(custom);
         }
 
         // hide factory
