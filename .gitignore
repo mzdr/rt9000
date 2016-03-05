@@ -1,0 +1,24 @@
+# os generated files
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# dev stuff
+node_modules
+.sass-cache
+bower_components
+
+# build
+build
+
+# ignore boilerplate stuff
+build.js
+clean.js
+config.js
+server.js
+tasks/
+watch.js
+package.json

@@ -1,0 +1,31 @@
+.simple-overlay {
+    @extend %shaky-border;
+
+    background-color: _color(white);
+    left: 50%;
+    max-width: 50rem;
+    padding: 3rem 2.5rem 2.5rem;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    width: 80%;
+
+    &.visible {
+        visibility: visible;
+    }
+
+    > .close {
+        position: absolute;
+        top: 0.5rem;
+        right: 1rem;
+    }
+
+    > .submit {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+        text-align: center;
+    }
+}

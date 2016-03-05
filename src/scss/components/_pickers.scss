@@ -1,0 +1,27 @@
+.device-picker {
+    display: inline-block;
+    margin: 0.5rem;
+    position: relative;
+
+    > .checkbox {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    > .checkbox:checked + .label::before {
+        display: block;
+    }
+
+    > .label {
+        @extend %shaky-border;
+
+        cursor: pointer;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        user-select: none;
+
+        &::before {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+/* -----------------------------------------------------------------------------
+   Define your global selectors in here!
+   -------------------------------------------------------------------------- */
+%shaky-border {
+    border: 0.1875rem solid _color(blue);
+    position: relative;
+
+    &::before {
+        border-width: inherit;
+        border-style: inherit;
+        border-color: _color(black);
+        bottom: -0.25rem;
+        content: "";
+        left: -0.5rem;
+        position: absolute;
+        right: -0.5rem;
+        top: -0.25rem;
+        transform: rotate(1deg);
+        z-index: -1;
+    }
+}

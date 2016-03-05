@@ -1,0 +1,36 @@
+@keyframes colors {
+    0% { text-shadow: 0.1875rem 0.125rem 0 _color(red); }
+    10% { text-shadow: 0.1875rem 0.125rem 0 _color(blue); }
+    20% { text-shadow: 0.1875rem 0.125rem 0 _color(orange); }
+    30% { text-shadow: 0.1875rem 0.125rem 0 _color(green); }
+    40% { text-shadow: 0.1875rem 0.125rem 0 _color(fuchsia); }
+    50% { text-shadow: 0.1875rem 0.125rem 0 _color(yellow); }
+    60% { text-shadow: 0.1875rem 0.125rem 0 _color(aqua); }
+    70% { text-shadow: 0.1875rem 0.125rem 0 _color(purple); }
+    80% { text-shadow: 0.1875rem 0.125rem 0 _color(chocolate); }
+    90% { text-shadow: 0.1875rem 0.125rem 0 _color(forest); }
+}
+
+@keyframes shake {
+    0% { transform: rotate(2deg); }
+    20% { transform: rotate(-2deg); }
+    40% { transform: rotate(2deg); }
+    60% { transform: rotate(-2deg); }
+    80% { transform: rotate(2deg); }
+}
+
+@keyframes shake-ne {
+    0% { transform: rotate(-5deg); }
+    20% { transform: rotate(-6deg); }
+    40% { transform: rotate(-4deg); }
+    60% { transform: rotate(-6deg); }
+    80% { transform: rotate(-4deg); }
+}
+
+@keyframes shake-nw {
+    0% { transform: rotate(5deg); }
+    20% { transform: rotate(6deg); }
+    40% { transform: rotate(4deg); }
+    60% { transform: rotate(6deg); }
+    80% { transform: rotate(4deg); }
+}

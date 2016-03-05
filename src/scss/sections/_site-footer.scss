@@ -1,0 +1,22 @@
+.site-footer {
+    bottom: 2.5rem;
+    position: fixed;
+    right: 2.5rem;
+
+    > .link {
+        cursor: pointer;
+        display: inline-block;
+        line-height: 1;
+        opacity: 0.25;
+        position: relative;
+        vertical-align: middle;
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
